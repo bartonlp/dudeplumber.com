@@ -1,0 +1,34 @@
+/* Css for plumberdfw.com */
+@import 'https://bartonphillips.net/css/blp.css';
+
+#container {
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: repeat(auto-fill, minmax(500px,1fr));
+  background-color: #a09d9d;
+  border: 5px solid #a09d9d;
+}
+.item {
+  background-color: #eee2db;
+  padding: 10px;
+}
+.item img { width: 100%; }
+/* Using a 500px and a 300px image from mysitemap.json so don't need this. */
+/*#logo img {
+  width: 500px;
+}*/
+#banner { margin-top: -70px; } /* put banner right under logo */
+#clog { width: 100%; }
+img[alt*='Clogged Toilet'], img[alt*='Clogged Sink'] { width: calc(50% - 5px); }
+img[alt*='Sink Repair'] { width: 100%; }
+img[alt*='newconstruction'] { width: 100%; }
+img[alt*='remodel'] { width: 100%; }
+img[alt*='Tankless'] { width: 240px; }
+img[alt*='Need a new'] { width: 100%; }
+img[alt*='Plumbing brick'] { width: 100%; }
+@media (hover: none) and (pointer: coarse) {
+  /*#logo img { width: 290px; }*/
+  #container { grid-template-columns: 1fr; }
+  #banner { margin-top: -40px; }
+}
+

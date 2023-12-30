@@ -1,0 +1,109 @@
+/*
+ * SPECIAL json for use by siteload.php. Normal json will not allow
+ * comments. The siteload.php program removes the comments and then
+ * passes the result to json_decode(), so after the comments are
+ * revomve the file MUST be legal parsable json.
+ */
+{
+    "siteDomain": "littlejohnplumbing.com", // only $this
+    "siteName": "Littlejohnplumbing", // only $this
+    //"mainTitle": "<h1>Jeff John</h1>", // also $S
+    "path": "/var/www/littlejohnplumbing.com", // only $this
+    "className": "SiteClass", // only $this. Not all programs use this, some instantiate SiteClass directly
+    "copyright": "Jeff John", // also via $S
+    "author": "Barton L. Phillips, mailto:bartonphillips@gmail.com", // also via $S
+    "address": "Fort Worth, Texas", // This goes in the footer and can be set via $S->address also
+    "favicon": "https://bartonphillips.net/images/favicon.ico",
+    "canonical": "https://www.littlejohnplumber.com",
+    "defaultCss": "css/jj-css.css", // If this is set to true then NO default
+    // header at all.
+    "masterdb": "barton", // only $this
+    "dbinfo": { // only $this
+      "host": "localhost",
+      "user": "barton", 
+      "database": "barton",
+      // "port": "", // if we need to change the port from the default.
+      // "socket": "", // as above.
+      "engine": "mysql", // Not used by dbMysqli
+      "DUMMY": null // DUMMY at end with no comma    
+    },
+    /* NOTE the errorMode entries are all controlled by statics so they can be set or unset at any time.
+     * They are all available via the ErrorClass.
+     * ErrorClass::set{item name capitalized}() or
+     * ErrorClass::get{item name capitalized}()
+     */ 
+    "errorMode": { // only $this. 
+      "development": true, // development automatically sets email to true.
+                           // If development is true then noEmail will be
+                           // set to true unless noEmail is set to false!
+                           // Only false not null or just missing.
+                           // The default is false.
+      "noEmail": null,   // Set it to null will not affect the true above which sets it to true also.
+                        // The default is false.
+      // "noHtml": false, // This is the default.
+      // "noOutput": false, // This is the default.
+      // "noBacktrace": false, // this is the default.
+      // "errLast": false, // this is the default. If true the file that
+                          // caused the error is shown.
+      // "exitonError": true // this is the default. If false then we
+                             // return to the caller.
+      "DUMMY": null // DUMMY at end with no comma
+    },
+    "headFile": "/var/www/bartonphillips.com/includes/head.i.php",
+    "bannerFile": "/var/www/bartonphillips.com/includes/banner.i.php",
+    "footerFile": "/var/www/bartonphillips.com/includes/footer.i.php",
+    "count": true, // only $this
+    "ctrmsg": "Counter Reset: January 1, 2024", // also via $S for footer. The counter reset message.
+    // The following can also be set via $S which has presidence
+    //
+    // "nodb": true, // if true then we do not load Database
+    // "noTrack": true, // if true we do not load tracker.js or tracker.php
+    // "base": "path to the base",
+    // "preheadercomment": "<!--Commint wrapped in comment marks-->",
+    // "lang": "en",
+    // "htmlextra": "something extra",
+    // "doctype", "<!DOCTYPE html>",
+    // "defaultCss": false, // also via $S
+    // "defaultImage": "This is the image that is used by tracker
+    // instead of https://bartonphillips.net/images/plank.png
+    // "imageLocation": "This is the location of images instead of the
+    // default of https://bartonphillips.net.
+    // "title": "goes in <title>",
+    // "desc": "some description",
+    // "keywords": "bunch of keywords",
+    //
+    // The following can also be set via $S for the footer 
+    //
+    // "msg": "some message", 
+    // "msg2": "some message",
+    // "msg2": "some message",
+    // "noCounter": true,
+    // "nofooter": true,
+    // "noLastmod": true,
+    // "noCopyright": true,
+    // "copyright": "This is the copyright",
+    // "aboutwebsite": "<h2><a target='_blank' href='phpinfo.php'>Something Special</a></h2>",
+    // "noAddress": true,
+    // "address": "Here at Home",
+    // "noEmailAddress": true,
+    //
+    // The ***Location entries let me put the elements of SiteClass in
+    // other locations. This would be required of someone downloaded
+    // SiteClass etc. and using the examples.
+    //"trackerLocation": "the location of tracker.php",
+    //"trackerLocationJs": "the location of tracker.js",
+    //"beaconLocation": "the location of beacon.php",
+    //"geoLocation": "Your location", // you can find geo.js and
+    // geoAjax.php at github.com/bartonlp/bartonphillips.net
+    //"imagesLocation": "https://bartonphillips.org/vendor/bartonlp/site-class/examples",
+    //"defaultImage": "./images/146624.png",
+    //"trackerLocation": "../includes/tracker.php",
+    //"trackerLocationJs": "../includes/tracker.js",
+    //"beaconLocation": "../includes/beacon.php",
+    //
+    "trackerImg1": "https://littlejohnplumbing.com/images/LittleJohnPlumbingLogoNoDomain500x386.png", // only $this. The trackerImg must have a slash before or make them a full url.
+    "trackerImgPhone": "https://littlejohnplumbing.com/images/LittleJohnPlumbingLogo-300.png", // use the same photo for desktop and phone
+    "EMAILADDRESS": "bartonphillips@gmail.com", // or $S->emailAddress
+    "EMAILRETURN": "bartonphillips@gmail.com", // only $this
+    "EMAILFROM": "webmaster@bartonphillips.com" // only $this
+}
