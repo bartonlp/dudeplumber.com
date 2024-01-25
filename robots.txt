@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /Archive/
+Disallow: /webstats.php
+Disallow: /webstats-ajax.php
+Disallow: /mysitemap.json
+
+Sitemap: http://www.littlejohnplumbing.com/Sitemap.xml

@@ -11,21 +11,55 @@ $S->banner = <<<EOF
 <!-- This div is used to move the banner text up to just below the <picture>-->
 <div id="banner">
 <h2>Phone: (817)-999-3682<br>
-Email: jeffrojohn@gmail.com</h2>
+Email: jeffrojohn@gmail.com<br>
+Licence# M-42447</h2>
 <h1>All Plumbing Needs in the DFW Metroplex</h1>
 </div>
 EOF;
 
 $S->canonical = "https://www.littlejohnplumbing.com";
 $S->favicon = "./images/favicon-192.ico";
+$S->keywords = "Venus Texas, Midlothian Texas, Tarrant county Texas, Johnson county Texas, Ellis counties Texas";
+
+$S->h_script = <<<EOF
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Little John Plumbing",
+  "telephone": "817-999-3682",
+  "email": "jeffrojohn@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Venus",
+    "addressRegion": "TX"
+  },
+  "areaServed": [
+    {
+      "@type": "Place",
+      "name": "Tarrant County, Texas"
+    },
+    {
+      "@type": "Place",
+      "name": "Johnson County, Texas"
+    },
+    {
+      "@type": "Place",
+      "name": "Ellis County, Texas"
+    }
+  ]
+}
+</script>
+EOF;
 
 [$top, $footer] = $S->getPageTopBottom();
 
 echo <<<EOF
 $top
 <hr>
-<p><a href="testemonials.php" alt="Testemonials">What People Say</a><br>
-<a href="contactme.php" alt="Contact Me">Contact Me</a></p>
+<p><a href="testimonials.php" alt="Testimonials">What People Say</a><br>
+<a href="contactus.php" alt="Contact Me">Contact Us</a><br>
+<a href="getaquote.php" alt="Get A Quote">Get A Quote</a></p>
 
 <!-- Start of container -->
 <div id="container">
@@ -35,8 +69,9 @@ $top
 <p>Hi, I'm Jeff John, welcome to my website. I'm the one who will be on the job when you have an issue.
 Whether it is a simple clogged drain or
 a new or remodel construction project, I will be there.</p>
-<p>Business hours are 8:00 am to 5:00 pm. Depending on the
-emergency, after hours calls are possible.</p>
+<p>Business hours are 8:00 am to 5:00 pm Monday-Friday. Depending on the
+emergency, after hours calls are possible.<br>
+Licence# M-42447.</p>
 <p>My primary service areas are Tarrant, Johnson and Ellis counties. I will occasionally work in Dallas County.</p>
 </div>
 <div class="item">
@@ -92,6 +127,11 @@ We carry a full line of both.</p>
 <li>plumberdfw.com
 <li>dudeplumber.com
 </ul>
+</div>
+<div id="bbb-seal">
+<a href="https://www.bbb.org/us/tx/venus/profile/plumber/little-john-plumbing-0825-1000223524/#sealclick" target="_blank" rel="nofollow">
+<img src="https://seal-austin.bbb.org/seals/blue-seal-293-61-bbb-1000223524.png" style="border: 0;" alt="Little John Plumbing BBB Business Review" />
+</a>
 </div>
 <hr>
 $footer
