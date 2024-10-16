@@ -12,12 +12,12 @@ $S->banner = <<<EOF
 <div id="banner">
 <h2>Phone: (817)-999-3682<br>
 Email: jeffrojohn@gmail.com<br>
-Licence# M-42447</h2>
+License# M-42447</h2>
 <h1>All Plumbing Needs in the DFW Metroplex</h1>
 </div>
 EOF;
 
-$S->canonical = "https://www.littlejohnplumbing.com";
+$S->canonical = "https://www.littlejohnplumber.com";
 $S->favicon = "./images/favicon-192.ico";
 $S->keywords = "Venus Texas, Midlothian Texas, Tarrant county Texas, Johnson county Texas, Ellis counties Texas";
 
@@ -71,7 +71,7 @@ Whether it is a simple clogged drain or
 a new or remodel construction project, I will be there.</p>
 <p>Business hours are 8:00 am to 5:00 pm Monday-Friday. Depending on the
 emergency, after hours calls are possible.<br>
-Licence# M-42447.</p>
+License# M-42447.</p>
 <p>My primary service areas are Tarrant, Johnson and Ellis counties. I will occasionally work in Dallas County.</p>
 </div>
 <div class="item">

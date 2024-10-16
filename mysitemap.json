@@ -33,12 +33,12 @@
      * ErrorClass::get{item name capitalized}()
      */ 
     "errorMode": { // only $this. 
-      "development": true, // development automatically sets email to true.
+      "development": false, //true, // development automatically sets email to true.
                            // If development is true then noEmail will be
                            // set to true unless noEmail is set to false!
                            // Only false not null or just missing.
                            // The default is false.
-      "noEmail": null,   // Set it to null will not affect the true above which sets it to true also.
+      "noEmail": false, //null,   // Set it to null will not affect the true above which sets it to true also.
                         // The default is false.
       // "noHtml": false, // This is the default.
       // "noOutput": false, // This is the default.
@@ -101,8 +101,8 @@
     //"trackerLocationJs": "../includes/tracker.js",
     //"beaconLocation": "../includes/beacon.php",
     //
-    "trackerImg1": "https://littlejohnplumbing.com/images/LittleJohnPlumbingLogoNoDomain500x386.png", // only $this. The trackerImg must have a slash before or make them a full url.
-    "trackerImgPhone": "https://littlejohnplumbing.com/images/LittleJohnPlumbingLogo-300.png", // use the same photo for desktop and phone
+    "trackerImg1": "https://littlejohnplumber.com/images/LittleJohnPlumbingLogoNoDomain500x386.png", // only $this. The trackerImg must have a slash before or make them a full url.
+    "trackerImgPhone": "https://littlejohnplumber.com/images/LittleJohnPlumbingLogo-300.png", // use the same photo for desktop and phone
     "EMAILADDRESS": "bartonphillips@gmail.com", // or $S->emailAddress
     "EMAILRETURN": "bartonphillips@gmail.com", // only $this
     "EMAILFROM": "webmaster@bartonphillips.com" // only $this
